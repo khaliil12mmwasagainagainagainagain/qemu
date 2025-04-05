@@ -4,6 +4,7 @@ services:
     container_name: qemu
     environment:
       BOOT: "https://archive.org/download/Windows7SP1DANAIOx86x64/Win7_DA_32_SP1_multiDVD.iso"
+        DISK_SIZE: "128G"
     devices:
       - /dev/kvm
       - /dev/net/tun
